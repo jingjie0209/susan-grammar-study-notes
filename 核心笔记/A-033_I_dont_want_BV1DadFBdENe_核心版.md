@@ -21,12 +21,12 @@ I don’t want the glasses because they are not convenient.；There is a stain o
 ## 易错提醒
 
 - 不把孩子一次说错当成考试失败；先接住意义，再给正确模型。
-- 五感体验要安全，不真的踩坏眼镜、接触变质食物或闭眼走动。
+- 五感演示用安全玩具和假动作，不踩坏眼镜、闭眼走动；角色故事不意味着需要矫正视力的人可不戴眼镜。
 
 **只观察这一件事：**孩子能否在明确对象上表达不要？若能，下一卡点是原因、句型连接还是助动词变形？
 
 依据已校核详细笔记提炼，非逐字记录；可能有识别与整理偏差，请以原视频为准。
 
-[详细版](../学习笔记/A-033_引导输出A-033_I_don't_want-20260507.md) · [原视频](https://www.bilibili.com/video/BV1DadFBdENe/)
+[详细版](../学习笔记/A-033_I_dont_want_BV1DadFBdENe.md) · [原视频](https://www.bilibili.com/video/BV1DadFBdENe/)
 
 视频及课程内容权利归原权利人。

@@ -1,5 +1,7 @@
 # A-031｜Grandma hates｜特指对象，补出理由再串联｜核心版
 
+**来源限制：**标题注明未录全原直播；本笔记只整理可获取的约28分钟语法内容，不补造缺失讲解。
+
 > 用清楚的限定让孩子感到“是这个对象”，再用 hates + 原因把对象、性质和旧句型连成一段；先传义，不把 the 或 why 变成孤立考试。
 
 ## 记住这 3 点
@@ -27,6 +29,6 @@ My grandma hates the juice in this glass because it is too sour.；Which one doe
 
 依据已校核详细笔记提炼，非逐字记录；可能有识别与整理偏差，请以原视频为准。
 
-[详细版](../学习笔记/A-031_引导输出A-031_Grandma_hates-20260423⚠️手机原因今天没有录全程，只节选了语法专场加入收藏夹.md) · [原视频](https://www.bilibili.com/video/BV1GXoTBJEc4/)
+[详细版](../学习笔记/A-031_Grandma_hates_BV1GXoTBJEc4.md) · [原视频](https://www.bilibili.com/video/BV1GXoTBJEc4/)
 
 视频及课程内容权利归原权利人。

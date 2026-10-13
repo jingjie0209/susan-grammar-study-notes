@@ -21,12 +21,12 @@ Do you want the book? — Yes, I want the book.；What kind of boat do you want?
 ## 易错提醒
 
 - 不要把“听过一遍”当成孩子能独立输出，也不要一次背五十句购物脚本。
-- 第一次传递可以用真实动作，后续用卡片提高练习次数；材料不如意思清楚重要。
+- 传义可用真实动作，复习再用卡片；尊重想要／不想要的选择，不拿实物交换逼孩子说句子。
 
 **只观察这一件事：**孩子是真懂“想要”，还是只会跟着卡片说 I want？他卡在对象、句首还是扩展维度？
 
 依据已校核详细笔记提炼，非逐字记录；可能有识别与整理偏差，请以原视频为准。
 
-[详细版](../学习笔记/A-032_引导输出A-032_I_want-20260424.md) · [原视频](https://www.bilibili.com/video/BV19HoLBkEmz/)
+[详细版](../学习笔记/A-032_I_want_BV19HoLBkEmz.md) · [原视频](https://www.bilibili.com/video/BV19HoLBkEmz/)
 
 视频及课程内容权利归原权利人。

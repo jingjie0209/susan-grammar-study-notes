@@ -27,6 +27,6 @@ He doesn’t want the hat because it is too heavy.；There is a stain on it.
 
 依据已校核详细笔记提炼，非逐字记录；可能有识别与整理偏差，请以原视频为准。
 
-[详细版](../学习笔记/A-035_引导输出A-035_Mr_bull_doesn't_want-20260512⚠️如何建立英语思维？.md) · [原视频](https://www.bilibili.com/video/BV1xQ5M66EnR/)
+[详细版](../学习笔记/A-035_Mr_bull_doesnt_want_BV1xQ5M66EnR.md) · [原视频](https://www.bilibili.com/video/BV1xQ5M66EnR/)
 
 视频及课程内容权利归原权利人。

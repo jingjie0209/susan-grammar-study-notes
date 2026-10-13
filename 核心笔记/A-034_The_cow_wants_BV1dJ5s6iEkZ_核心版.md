@@ -27,6 +27,6 @@ The cow wants a ball.；She wants the van for carrying bags.
 
 依据已校核详细笔记提炼，非逐字记录；可能有识别与整理偏差，请以原视频为准。
 
-[详细版](../学习笔记/A-034_引导输出A-034_the_cow_wants-20260511.md) · [原视频](https://www.bilibili.com/video/BV1dJ5s6iEkZ/)
+[详细版](../学习笔记/A-034_The_cow_wants_BV1dJ5s6iEkZ.md) · [原视频](https://www.bilibili.com/video/BV1dJ5s6iEkZ/)
 
 视频及课程内容权利归原权利人。
