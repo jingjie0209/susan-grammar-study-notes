@@ -2,19 +2,19 @@
 
 在线阅读：https://jingjie0209.github.io/susan-grammar-study-notes/
 
-[核心速读](core-index.html) · [本次新增 A-036～A-040](core-index.html#core-A-036)
+[核心速读](core-index.html) · [本次新增 A-041～A-045](core-index.html#core-A-041)
 
 原视频合集：https://space.bilibili.com/3546835260016842/lists/7970912?type=season
 
 ## 当前范围（2026 年 10 月 14 日）
 
 - 目录：91 条来源视频，51 小时 17 分 33 秒；目录数量基于 2026 年 10 月 10 日快照，不代表今天重新抓取。
-- 已完成：41 份来源笔记，对应 A-001～A-040 共 **40 讲不同内容**；未完成的来源仍只有目录。
+- 已完成：46 份来源笔记，对应 A-001～A-045 共 **45 讲不同内容**；未完成的来源仍只有目录。
 - A-003 两次上传为同一内容，核心目录合并展示，来源文件分别保留，不算成两讲。
 - 每讲均有核心版（约 1–2 分钟），只保留重点、练法与易错提醒。首页优先核心版，详细 HTML、PDF 和 Markdown 保留。
-- 本次新增 A-036～A-040 共 5 讲，详细版共 10 页 PDF、12,891 字符。
+- 本次新增 A-041～A-045 共 5 讲，详细版共 10 页 PDF、13,938 字符。
 
-[下载全部核心版 ZIP](downloads/study-notes-core.zip) · [本次新增 ZIP](downloads/study-notes-A036-A040.zip) · [已完成总包](downloads/study-notes-all.zip)
+[下载全部核心版 ZIP](downloads/study-notes-core.zip) · [本次新增 ZIP](downloads/study-notes-A041-A045.zip) · [已完成总包](downloads/study-notes-all.zip)
 
 核心 ZIP 只含轻量核心 HTML / Markdown 和目录；详细版、PDF 与原视频链接需要联网。总包与新增批次包同时包含对应的详细版和核心版。
 
