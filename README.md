@@ -4,6 +4,10 @@
 
 [核心速读](core-index.html) · [本次新增 A-051](core-index.html#core-A-051)
 
+[句型应答阶梯 A-001～A-005](ladder-index.html) · [下载本组阶梯 ZIP](downloads/study-ladders-A001-A005.zip)
+
+新增5份阶梯，按使用信号而非固定年龄分层，每份独立HTML、Markdown与1页PDF。旧核心正文与详细原件保留；阶梯不算新增课程。
+
 原视频合集：https://space.bilibili.com/3546835260016842/lists/7970912?type=season
 
 ## 当前范围（2026 年 10 月 15 日）
