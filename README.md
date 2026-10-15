@@ -4,9 +4,9 @@
 
 [核心速读](core-index.html) · [本次新增 A-051](core-index.html#core-A-051)
 
-[句型应答阶梯 A-001～A-005](ladder-index.html) · [下载本组阶梯 ZIP](downloads/study-ladders-A001-A005.zip)
+[句型应答阶梯 A-001～A-010](ladder-index.html) · [本次新增 A-006～A-010](ladder-index.html#ladder-A-006) · [下载本组阶梯 ZIP](downloads/study-ladders-A006-A010.zip) · [下载全部阶梯](downloads/study-ladders-all.zip)
 
-新增5份阶梯，按使用信号而非固定年龄分层，每份独立HTML、Markdown与1页PDF。旧核心正文与详细原件保留；阶梯不算新增课程。
+本次新增5份阶梯，累计10份；按使用信号而非固定年龄分层，每份独立HTML、Markdown与1页PDF。旧核心正文与详细原件保留，历史阶梯批次ZIP保留；阶梯不算新增课程。
 
 原视频合集：https://space.bilibili.com/3546835260016842/lists/7970912?type=season
 
