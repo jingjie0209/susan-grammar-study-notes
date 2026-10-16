@@ -4,13 +4,13 @@
 
 [核心速读](core-index.html) · [本次新增 A-051](core-index.html#core-A-051)
 
-[句型应答阶梯 A-001～A-010](ladder-index.html) · [本次新增 A-006～A-010](ladder-index.html#ladder-A-006) · [下载本组阶梯 ZIP](downloads/study-ladders-A006-A010.zip) · [下载全部阶梯](downloads/study-ladders-all.zip)
+[句型应答阶梯 A-001～A-020](ladder-index.html) · [本次新增 A-011～A-020](ladder-index.html#ladder-A-011) · [下载本组阶梯 ZIP](downloads/study-ladders-A011-A020.zip) · [下载全部阶梯](downloads/study-ladders-all.zip)
 
-本次新增5份阶梯，累计10份；按使用信号而非固定年龄分层，每份独立HTML、Markdown与1页PDF。旧核心正文与详细原件保留，历史阶梯批次ZIP保留；阶梯不算新增课程。
+本次新增10份阶梯，累计20份；按使用信号而非固定年龄分层，每份独立HTML、Markdown与1页PDF。旧核心正文与详细原件保留，历史阶梯批次ZIP保留；阶梯不算新增课程。
 
 原视频合集：https://space.bilibili.com/3546835260016842/lists/7970912?type=season
 
-## 当前范围（2026 年 10 月 15 日）
+## 当前范围（2026 年 10 月 16 日）
 
 - 目录：91 条来源视频，51 小时 17 分 33 秒；目录数量基于 2026 年 10 月 10 日快照，不代表今天重新抓取。
 - 已完成：52 份来源笔记，对应 A-001～A-051 共 **51 讲不同内容**；未完成的来源仍只有目录。
