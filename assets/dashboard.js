@@ -13,8 +13,10 @@
   if (!root) return;
   const cards = Array.from(root.querySelectorAll('.lesson-card'));
   const codes = new Set(cards.map(card => card.dataset.code));
-  const stateNames = {ready:'准备练', practicing:'练习中', review:'待回顾', output:'已输出', mastered:'已掌握'};
+  const stateNames = {ready:'准备练', practicing:'练习中', review:'待回顾', output:'已输出'};
   const allowedStates = new Set(Object.keys(stateNames));
+  // Preserve old marks and shared filters when the retired state is encountered.
+  const normalizeState = value => value === 'mastered' ? 'output' : value;
   const key = 'susan-practice-v1';
   const urlNow = () => new URL(window.location.href);
   // A UI revision query must not discard an older saved reading location.
@@ -26,7 +28,8 @@
     const raw = JSON.parse(localStorage.getItem(key) || 'null');
     if (raw && raw.states && typeof raw.states === 'object' && !Array.isArray(raw.states)) {
       for (const [code, value] of Object.entries(raw.states)) {
-        if (codes.has(code) && allowedStates.has(value)) store.states[code] = value;
+        const state = normalizeState(value);
+        if (codes.has(code) && allowedStates.has(state)) store.states[code] = state;
       }
       if (raw.last && typeof raw.last === 'object' && codes.has(raw.last.code) && typeof raw.last.href === 'string') {
         const matching = matchingVisit(raw.last.code,raw.last.href);
@@ -68,7 +71,8 @@
     const params = urlNow().searchParams;
     input.value = params.get('q') || '';
     series.value = ['A','B'].includes(params.get('series')) ? params.get('series') : '';
-    practice.value = (allowedStates.has(params.get('state')) || params.get('state') === 'unmarked') ? params.get('state') : '';
+    const requestedState = normalizeState(params.get('state'));
+    practice.value = (allowedStates.has(requestedState) || requestedState === 'unmarked') ? requestedState : '';
     sort.value = params.get('sort') === 'newest' ? 'newest' : 'course';
     // Keep previously shared theme/latest URLs readable without rendering filter chips.
     theme = cards.some(card => card.dataset.theme === params.get('theme')) ? params.get('theme') : '';
@@ -146,7 +150,8 @@
       const fresh = {};
       if (raw && raw.states && typeof raw.states === 'object') {
         for (const [code,value] of Object.entries(raw.states)) {
-          if (codes.has(code) && allowedStates.has(value)) fresh[code]=value;
+          const state = normalizeState(value);
+          if (codes.has(code) && allowedStates.has(state)) fresh[code]=state;
         }
       }
       store.states=fresh;
