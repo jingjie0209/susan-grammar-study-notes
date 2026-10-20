@@ -1,0 +1,62 @@
+/* Mobile-only layout. Desktop and print keep the established dashboard layout. */
+.mobile-top{display:none}
+@media screen and (max-width:900px){
+  html{scroll-padding-top:18px;-webkit-text-size-adjust:100%}
+  body{padding-bottom:env(safe-area-inset-bottom,0px)}
+  .workspace{margin-left:0}
+  .topbar{height:auto;min-height:40px;flex-wrap:wrap;gap:3px 12px;padding:14px 20px 10px;font-size:12px;line-height:1.7}
+  .topbar>div{font-size:12px;gap:5px}.workspace main{padding:0 20px}
+  .hero{padding:14px 0 22px;margin:0 0 22px}.hero-copy{grid-template-columns:1fr;gap:16px}.hero-copy h1{font-size:32px;line-height:1.5;overflow-wrap:anywhere}
+  .eyebrow{font-size:10px;line-height:1.6}.hero-description{font-size:15px;line-height:1.8;margin-top:12px}
+  .hero-next{display:block;max-width:none}.hero-next .hero-actions{width:100%}.hero-next .button{font-size:15px;min-height:48px;padding:12px 20px}
+  .hero-next .resume-caption{max-width:none;margin-top:10px;font-size:12px;line-height:1.8}
+  .personal-panel{grid-template-columns:1fr;gap:14px;margin:22px 0 30px;padding:20px;border-radius:14px}
+  .personal-panel h2{font-size:23px}.personal-panel>div>p:not(.eyebrow){font-size:13px;line-height:1.8}.personal-panel>div>p br{display:none}
+  .practice-numbers{grid-template-columns:repeat(4,minmax(0,1fr));gap:0}.practice-numbers a{min-height:68px;padding:8px 2px}.practice-numbers strong{font-size:28px}.practice-numbers span{font-size:12px;white-space:nowrap}
+  .section-heading{gap:12px;align-items:flex-start}.section-heading h2{font-size:24px}.section-heading>div>p:not(.eyebrow){font-size:14px;line-height:1.8}.section-heading>.text-link{flex:none;font-size:12px;min-height:44px;display:inline-flex;align-items:center}
+  .library-toolbar{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:18px}.search-wrap{grid-column:1/-1}
+  .library-toolbar label{min-width:0}.library-toolbar input,.library-toolbar select{font-size:16px;min-height:48px;height:auto;line-height:1.5;padding:11px 10px;width:100%;border-radius:10px}
+  .lesson-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.lesson-card{padding:18px 18px 14px;border-radius:14px;scroll-margin-top:16px}
+  .sentence{font-size:30px;line-height:1.35;min-height:0;overflow-wrap:anywhere}.card-top{margin-bottom:10px}.course-code{font-size:13px}.category-label{font-size:11px}.new-label{font-size:11px}
+  .card-subtitle{font-size:16px;min-height:0;margin:8px 0 6px;line-height:1.7}.card-description{font-size:15px;min-height:0;line-height:1.8;margin-bottom:0}
+  .quick-points{font-size:14px;margin:6px 0 8px}.quick-points summary{display:list-item;min-height:44px;padding:10px 0;font-size:14px;line-height:1.7}
+  .inline-ladder-heading>span{font-size:12px}.inline-ladder-heading strong,.inline-ladder-example{font-size:14px;line-height:1.8}.inline-ladder-signal{font-size:13px;line-height:1.8}.quick-points>.tiny{font-size:12px}
+  .card-cta{display:grid;grid-template-columns:1fr;gap:10px;margin-top:8px}.card-cta>.button{font-size:14px;min-height:48px;gap:6px;padding:10px 8px}.practice-control{display:block}.practice-control select{width:100%;font-size:16px;min-height:48px;padding:10px 8px}
+  .card-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 10px;margin-top:10px;padding-top:6px}.card-links a{display:flex;align-items:center;justify-content:flex-start;min-height:44px;margin:0;padding:8px 0;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+  .page-heading{padding:12px 0 24px}.page-heading h1{font-size:31px;line-height:1.5}.page-heading>p:not(.eyebrow){font-size:15px;line-height:1.8}.page-heading-links{gap:6px 16px}.page-heading-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}.title-count{font-size:13px}
+  .reading-guide{grid-template-columns:1fr;gap:16px;padding:20px;margin-bottom:26px}.reading-guide>div{display:grid;grid-template-columns:28px minmax(0,1fr);gap:3px 10px;padding:0}.reading-guide span{position:static;grid-row:1/3;font-size:13px;margin:0}.reading-guide strong{font-size:15px}.reading-guide p{font-size:14px;line-height:1.7}
+  .ladder-explainer{flex-direction:column;align-items:flex-start;gap:12px;padding:20px}.ladder-word{border:0;padding:0;font-size:20px}.ladder-word br{display:none}.ladder-explainer strong{font-size:16px}.ladder-explainer p{font-size:14px;line-height:1.8}.ladder-explainer .tiny{font-size:12px}
+  .mini-ladder li{font-size:14px;padding:10px 0}.lesson-card>.tiny{font-size:12px}.source-limit{font-size:13px}
+  .empty-state{padding:24px 18px}.empty-state p{font-size:15px}.empty-state button{font-size:15px;min-height:48px}
+  .site-footer{padding:0 20px 24px;font-size:12px;line-height:1.8}
+  .toast{max-width:calc(100vw - 32px);width:max-content;bottom:calc(76px + env(safe-area-inset-bottom,0px));font-size:14px;line-height:1.7}
+  .mobile-top:not([hidden]){position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:76px;padding:9px 13px;background:#fff;color:var(--teal-dark);border:1px solid #cbd9d1;border-radius:24px;box-shadow:0 3px 14px #243c3b12;font-size:14px}
+}
+@media screen and (max-width:600px){
+  .topbar{padding:14px 16px 8px;font-size:11px}.topbar>div{font-size:11px}.workspace main{padding:0 16px}
+  .hero-copy h1{font-size:clamp(27px,7.4vw,32px)}.hero-next .button{width:100%}
+  .personal-panel{padding:18px 16px}.personal-panel h2{font-size:22px}.practice-numbers strong{font-size:26px}
+  .section-heading{flex-wrap:wrap;gap:4px}.section-heading h2{font-size:23px}.section-heading>.text-link{min-height:36px}
+  .library-toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}.library-toolbar>label:last-child{grid-column:1/-1}
+  .lesson-grid{grid-template-columns:1fr}.lesson-card{padding:18px 16px 14px}.sentence{font-size:clamp(28px,7.6vw,34px)}
+  .site-footer{padding-left:16px;padding-right:16px}
+}
+@media screen and (max-width:360px){
+  .card-cta{grid-template-columns:1fr}.card-cta>.button,.practice-control select{width:100%}.personal-panel{padding:16px 12px}.practice-numbers strong{font-size:24px}.practice-numbers span{font-size:12px}
+}
+@media print{.mobile-top{display:none!important}}
+
+@media screen and (max-width:900px){
+  .ladder-entry{min-height:44px;padding:10px 0;margin:6px 0 8px;font-size:14px;line-height:1.7}
+}
+
+@media screen and (max-width:900px){
+  .card-top>.practice-control{width:116px}
+  .card-top .category-label{white-space:nowrap}
+  .sentence .source-watch{font-size:13px;min-height:44px;margin-left:5px}
+}
+
+@media screen and (max-width:900px){
+  .core-card .card-cta{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .core-card .card-cta>.detail-note{width:auto;min-width:88px;white-space:nowrap}
+}

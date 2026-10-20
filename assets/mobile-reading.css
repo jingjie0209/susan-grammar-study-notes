@@ -1,0 +1,23 @@
+/* Shared mobile reading layer; note text and printable/downloaded originals are untouched. */
+@media screen and (max-width:900px){
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}
+  body{margin:0;font-size:16px;line-height:1.85}
+  main{width:100%;max-width:100%;margin:0;padding:24px max(18px,env(safe-area-inset-right,0px)) max(28px,env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));border-radius:0}
+  h1{font-size:clamp(25px,5.5vw,31px);line-height:1.5;overflow-wrap:anywhere}h2{font-size:22px;line-height:1.6}h3{font-size:19px;line-height:1.6}
+  p,li,a,td,th{overflow-wrap:anywhere}img,video,svg{max-width:100%;height:auto}pre{max-width:100%;overflow-x:auto}code{overflow-wrap:anywhere}
+  .note-nav,.core-nav,.nav,main>nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:14px;line-height:1.6}
+  .note-nav a,.core-nav a,.nav a,main>nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;max-width:100%}
+  .note-nav .source-watch,.core-nav .source-watch,.nav .source-watch{padding:8px 10px}
+  .core-nav,.note-nav,.nav{padding-bottom:16px;margin-bottom:20px}
+  table:not(.ladder-table){display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;font-size:14px;line-height:1.8}
+  table:not(.ladder-table) th,table:not(.ladder-table) td{min-width:112px;padding:10px;vertical-align:top}
+  .ladder-table td{font-size:15px;line-height:1.9}.ladder-table td:last-child{font-size:15px}
+  .core-takeaway,.core-example,.core-observe,.notice,.help,.observe{padding:14px;font-size:15px;line-height:1.85}
+  .core-meta,.core-hint,.small,footer{font-size:13px;line-height:1.8}
+  .filters{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:20px}
+  .filters input,.filters select{width:100%;min-width:0;min-height:48px;font-size:16px;padding:11px 12px;line-height:1.5}
+  .video-card{padding:18px 16px;border-radius:12px;margin:16px 0}.video-card h2{font-size:18px;line-height:1.65}.meta{font-size:13px;line-height:1.8}
+  .links{display:flex;flex-wrap:wrap;gap:8px 12px}.links>a{display:inline-flex;align-items:center;min-height:44px;flex:1 1 100px;font-size:14px}.links>.source-watch{flex-basis:100%;justify-content:center;padding:10px 12px}
+  .core-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
+}
