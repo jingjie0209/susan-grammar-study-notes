@@ -53,13 +53,7 @@
     document.querySelectorAll('[data-state-count]').forEach(n => {
       n.textContent = String(Object.values(store.states).filter(value => value === n.dataset.stateCount).length);
     });
-    const resume = document.getElementById('resume-link');
-    if (resume && store.last) {
-      resume.setAttribute('href', store.last.href);
-      resume.dataset.visit = store.last.code;
-      resume.textContent = '继续上次阅读 ↗';
-      document.getElementById('resume-caption').textContent = '上次打开 · ' + store.last.code + ' · 阅读记录不代表掌握';
-    }
+
   }
   updateMarks();
   const input = root.querySelector('input[type=search]');

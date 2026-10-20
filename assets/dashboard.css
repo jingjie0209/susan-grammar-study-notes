@@ -68,3 +68,6 @@
 /* Core and detailed reading share a single compact action row. */
 .lesson-card .card-cta>.detail-note{flex:0 0 auto;background:#fff;color:var(--teal-dark);border-color:#cbd9d1}
 .lesson-card .card-cta>.detail-note:hover{background:#edf3ed;border-color:#aacbbb}
+
+/* Homepage introduction no longer reserves a column for reading history. */
+.hero-copy{grid-template-columns:minmax(0,1fr)}
