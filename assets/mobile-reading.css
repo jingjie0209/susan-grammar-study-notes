@@ -21,3 +21,79 @@
   .links{display:flex;flex-wrap:wrap;gap:8px 12px}.links>a{display:inline-flex;align-items:center;min-height:44px;flex:1 1 100px;font-size:14px}.links>.source-watch{flex-basis:100%;justify-content:center;padding:10px 12px}
   .core-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
 }
+
+/* Local dopamine reading palette; screen only, preserving printed originals. */
+@media screen{
+  body{background:#fffbee;color:#302944}
+  main{background:#fffefb;border-top-color:#a879f0}
+  a,h2,.tag,.core-tag,.level,.prompt-list strong,.core-card summary{color:#7041d9}
+  .goal,.core-takeaway{background:#eee4ff;border-left-color:#a879f0}
+  .notice{background:#fff2b8}.observe,.core-observe{background:#ddf9ef}
+  .core-example{background:#e5f4ff}
+  .notice,.small,.meta,footer,.core-meta,.core-hint{color:#70647e}
+  .nav,.note-nav,.core-nav,.sources{border-color:#e7dff0}
+  td,th,.ladder-table th,.ladder-table td,.card,.core-card,.video-card{border-color:#e0d5ed}
+  th,.ladder-table thead{background:#7041d9;color:white}
+  tr:nth-child(even),.ladder-table tbody tr:nth-child(even){background:#f5efff}
+  .help,.core-empty{background:#fff2b8;border-left-color:#f0bf2a}
+  input,select,.core-search,.filters input,.filters select{background:#fffefb;color:#302944;border-color:#d8c9e8}
+  .source-watch{color:#ad431f!important;background:#ffe3d2;border-color:#ffb89b}
+  .source-watch:hover{background:#ffd4bd}
+  .ladder-table td:not(:first-child)::before{color:#70647e}
+  .video-card{border-top:4px solid #aa86ed}
+  .video-card:nth-of-type(3n+2){border-top-color:#ff977b}
+  .video-card:nth-of-type(3n){border-top-color:#54cbb2}
+  a:focus-visible,input:focus-visible,select:focus-visible{outline-color:#7c3be0}
+}
+@media screen and (max-width:700px){
+  .ladder-table tbody tr{background:#fffefb;border-color:#d9c4f4}
+  .ladder-table td:first-child{background:#e8d9ff}
+  .ladder-table tbody tr:nth-child(3n+2) td:first-child{background:#d3f5e9}
+  .ladder-table tbody tr:nth-child(3n) td:first-child{background:#ffe4ce}
+}
+
+/* Local A-001 activity sample: original ladder rows remain intact. */
+@media screen{
+  .ladder-table:has(.game-column) th:nth-child(1){width:8%}
+  .ladder-table:has(.game-column) th:nth-child(2){width:19%}
+  .ladder-table:has(.game-column) th:nth-child(3){width:16%}
+  .ladder-table:has(.game-column) th:nth-child(4){width:29%}
+  .ladder-table:has(.game-column) th:nth-child(5){width:15%}
+  .ladder-table:has(.game-column) th:nth-child(6){width:13%}
+  .game-jump{display:inline-block;min-height:32px;line-height:1.8;text-underline-offset:4px}
+  .ladder-games{margin:28px 0;border-top:1px solid #e0d5ed;padding-top:6px}
+  .game-origin,.game-level{display:inline-block;font-size:12px;font-weight:600;line-height:1.6;padding:3px 8px;border-radius:6px;background:#eee4ff;color:#6631b9;vertical-align:middle}
+  .game-download-note{font-size:13px;color:#70647e;border-left:3px solid #eac74f;padding-left:12px}
+  .practice-game{margin:14px 0;border:1px solid #d9c7ef;border-radius:12px;background:#fff;scroll-margin-top:18px;overflow:hidden}
+  .practice-game summary{cursor:pointer;padding:16px;min-height:52px;line-height:1.7;overflow-wrap:anywhere;background:#f7f2ff}
+  .practice-game summary .game-level{margin-right:8px}
+  .practice-game:nth-of-type(3n+2) summary{background:#e9faf3}
+  .practice-game:nth-of-type(3n) summary{background:#fff1e4}
+  .practice-game summary:focus-visible{outline:3px solid #7041d9;outline-offset:-3px}
+  .game-body{padding:4px 18px 18px}.game-body h3{font-size:17px;margin:18px 0 8px}
+  .game-body ol{padding-left:24px}.game-dialogue{margin:8px 0;padding:12px 16px;background:#f8f5fd;border-radius:8px}
+  .game-dialogue>div+div{margin-top:10px}.game-dialogue dt{font-size:13px;color:#70647e}.game-dialogue dd{margin:2px 0 0;font-weight:600;overflow-wrap:anywhere}
+  .game-rescue{background:#fff4d2;padding:12px;border-radius:8px}
+  .game-observe{border-left:3px solid #75cdb3;padding:6px 12px}
+}
+@media screen and (max-width:900px){.game-jump{min-height:44px;padding:8px 0}}
+@media screen and (max-width:700px){.game-body{padding:2px 12px 14px}.practice-game summary{padding:14px 12px}.game-origin{font-size:11px}}
+/* Keep the response ladder as a real table at every screen size. */
+@media screen{
+  .ladder-table-hint{font-size:13px;color:#70647e;margin:10px 0}
+  .ladder-table-scroll{max-width:100%;width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;border:1px solid #dfd1f1;border-radius:10px;scroll-padding-left:84px}
+  .ladder-table-scroll:focus-visible{outline:3px solid #a879f0;outline-offset:3px}
+  .ladder-table-scroll .ladder-table{display:table;min-width:1000px;width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:14px;line-height:1.8}
+  .ladder-table-scroll .ladder-table caption{display:table-caption;width:auto;text-align:left;padding:10px 12px;margin:0;background:#fffefb;caption-side:top}
+  .ladder-table-scroll .ladder-table thead{display:table-header-group}
+  .ladder-table-scroll .ladder-table tbody{display:table-row-group}
+  .ladder-table-scroll .ladder-table tr{display:table-row;width:auto;border:0;border-radius:0;margin:0;overflow:visible}
+  .ladder-table-scroll .ladder-table th,.ladder-table-scroll .ladder-table td{display:table-cell;width:auto;padding:12px 10px;border:0;border-right:1px solid #dfd1f1;border-bottom:1px solid #dfd1f1;vertical-align:top;font-size:14px;line-height:1.8}
+  .ladder-table-scroll .ladder-table td:not(:first-child)::before{content:none}
+  .ladder-table-scroll .ladder-table tbody tr:nth-child(n) td:first-child{position:sticky;left:0;z-index:1;background:#fffefb;box-shadow:2px 0 3px #6331b90c;font-weight:700}
+  .ladder-table-scroll .ladder-table tbody tr:nth-child(even) td:first-child{background:#f5efff}
+  .ladder-table-scroll .ladder-table th:first-child{position:sticky;left:0;z-index:2;background:#7041d9}
+  .ladder-table-scroll .ladder-table th:last-child,.ladder-table-scroll .ladder-table td:last-child{border-right:0}
+  .ladder-table-scroll .ladder-table tbody tr:last-child td{border-bottom:0}
+}
+@media print{.ladder-table-hint{display:none}.ladder-table-scroll{overflow:visible;border:0}.ladder-table-scroll .ladder-table{min-width:0}}

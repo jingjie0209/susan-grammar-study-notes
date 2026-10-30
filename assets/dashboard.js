@@ -49,6 +49,11 @@
     catch (_) { persistent = false; }
   }
   function updateMarks() {
+    // One source of truth: card colours follow the same normalized manual mark
+    // as the selector, counters and filters (including restored legacy marks).
+    cards.forEach(card => {
+      card.dataset.practiceState = store.states[card.dataset.code] || 'unmarked';
+    });
     document.querySelectorAll('select[data-practice]').forEach(select => {
       select.value = store.states[select.dataset.practice] || '';
       select.dataset.marked = String(!!select.value);
@@ -62,7 +67,6 @@
   const input = root.querySelector('input[type=search]');
   const series = root.querySelector('#series-filter');
   const practice = root.querySelector('#practice-filter');
-  const sort = root.querySelector('#sort-filter');
   const grid = root.querySelector('.lesson-grid');
   const empty = root.querySelector('.empty-state');
   let theme='', latest=false, range=null;
@@ -73,7 +77,6 @@
     series.value = ['A','B'].includes(params.get('series')) ? params.get('series') : '';
     const requestedState = normalizeState(params.get('state'));
     practice.value = (allowedStates.has(requestedState) || requestedState === 'unmarked') ? requestedState : '';
-    sort.value = params.get('sort') === 'newest' ? 'newest' : 'course';
     // Keep previously shared theme/latest URLs readable without rendering filter chips.
     theme = cards.some(card => card.dataset.theme === params.get('theme')) ? params.get('theme') : '';
     latest = params.get('latest') === '1';
@@ -82,7 +85,7 @@
   }
   function syncURL() {
     const u = urlNow();
-    const values = {q:input.value.trim(),series:series.value,state:practice.value,sort:sort.value==='newest'?'newest':'',theme,latest:latest?'1':'',range:range?range.join(':'):'',page:''};
+    const values = {q:input.value.trim(),series:series.value,state:practice.value,sort:'',theme,latest:latest?'1':'',range:range?range.join(':'):'',page:''};
     for (const [k,v] of Object.entries(values)) {if (v) u.searchParams.set(k,v); else u.searchParams.delete(k);}
     if (/^#(?:core|ladder)-[AB]-\d{3}$/.test(u.hash)) u.hash = root.id;
     try {history.replaceState(null,'',u);} catch (_) {/* file:// remains readable */}
@@ -98,7 +101,8 @@
         (!range || (code>=range[0] && code<=range[1])) &&
         (!practice.value || (practice.value==='unmarked'?!mark:practice.value===mark));
     });
-    filtered.sort((a,b) => sort.value==='newest' ? b.dataset.code.localeCompare(a.dataset.code) : a.dataset.code.localeCompare(b.dataset.code));
+    // Always follow the original course order; old sort URLs are ignored.
+    filtered.sort((a,b) => a.dataset.code.localeCompare(b.dataset.code));
     const visibleSet = new Set(filtered);
     // Order all cards, including hidden ones, without losing original fragment targets.
     filtered.forEach(card=>grid.appendChild(card));
@@ -111,7 +115,7 @@
     const card = cards.find(card=>card.id===hash);
     if (card) {
       // A saved lesson URL always reveals the requested lesson, regardless of filters.
-      input.value='';series.value='';practice.value='';theme='';latest=false;range=null;sort.value='course';
+      input.value='';series.value='';practice.value='';theme='';latest=false;range=null;
       render(); requestAnimationFrame(()=>card.scrollIntoView({block:'start'}));
     }
     // Removed route bookmarks now land on the useful sentence library.
@@ -126,8 +130,8 @@
   }
   function changed(){render(true);}
   input.addEventListener('input',changed);
-  [series,practice,sort].forEach(select=>select.addEventListener('change',changed));
-  root.querySelectorAll('[data-reset]').forEach(button=>button.addEventListener('click',()=>{input.value='';series.value='';practice.value='';sort.value='course';theme='';latest=false;range=null;changed();}));
+  [series,practice].forEach(select=>select.addEventListener('change',changed));
+  root.querySelectorAll('[data-reset]').forEach(button=>button.addEventListener('click',()=>{input.value='';series.value='';practice.value='';theme='';latest=false;range=null;changed();}));
   document.querySelectorAll('select[data-practice]').forEach(select=>select.addEventListener('change',()=>{
     if (allowedStates.has(select.value)) store.states[select.dataset.practice]=select.value;
     else delete store.states[select.dataset.practice];
