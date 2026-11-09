@@ -97,3 +97,27 @@
   .ladder-table-scroll .ladder-table tbody tr:last-child td{border-bottom:0}
 }
 @media print{.ladder-table-hint{display:none}.ladder-table-scroll{overflow:visible;border:0}.ladder-table-scroll .ladder-table{min-width:0}}
+
+/* Question/response pairs imported from the user's workbook; not new video quotes. */
+.question-bank{margin:28px 0 34px}
+.question-bank-lead{font-size:15px;color:#655b76}
+.question-pairs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:0;margin:20px 0;list-style:none}
+.question-pairs .question-pair{margin:0;padding:16px;border:1px solid #e3d8f1;border-radius:12px;background:#fff;min-width:0;overflow-wrap:anywhere}
+.question-pair-meta{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;font-size:12px;line-height:1.7;color:#73667f}
+.question-task{padding:3px 8px;background:#eee4ff;color:#583196;font-weight:650;border-radius:6px}
+.question-pairs .question-pair h3{font-size:18px;line-height:1.6;margin:12px 0 10px;color:#402e5f}
+.question-response{margin:10px 0;padding:12px;background:#ecfaf3;border-radius:8px;font-size:15px;line-height:1.8}
+.question-response span{display:block;font-size:12px;color:#386e57;margin-bottom:4px}
+.question-response strong{display:block;font-weight:600;color:#234e3f;white-space:pre-line}
+.question-pair .question-context{font-size:14px;color:#61586e;line-height:1.8;margin:10px 0 0}
+.question-pair .question-alternative{font-size:13px;color:#61586e;line-height:1.8;margin:8px 0}
+.question-special{background:#fff3d0;border-left:3px solid #ebc94a;padding:12px 14px;font-size:14px;line-height:1.9;border-radius:0 8px 8px 0}
+.question-source{border:1px solid #e3d8f1;border-radius:10px;background:#fff;margin:16px 0;overflow:hidden}
+.question-source summary{min-height:44px;box-sizing:border-box;padding:12px 14px;cursor:pointer;font-size:14px;color:#6337a3;background:#f7f2ff}
+.question-source summary:focus-visible{outline:3px solid #7041d9;outline-offset:-3px}
+.question-source-body{padding:0 16px 14px;overflow-wrap:anywhere;font-size:14px;line-height:1.8}
+.question-source-body h3{font-size:16px}.question-source-ref{font-size:12px;color:#73667f}
+.question-verbatim{white-space:pre-wrap}
+.question-bank-credit{font-size:12px;color:#73667f;line-height:1.8}
+@media(max-width:700px){.question-pairs{grid-template-columns:minmax(0,1fr);gap:12px}.question-pairs .question-pair{padding:14px}.question-bank{margin:24px 0 28px}}
+@media print{.question-pairs{display:block}.question-pair{break-inside:avoid}.question-source,.question-bank-credit{display:none}.question-response{border:1px solid #ddd}}
